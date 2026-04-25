@@ -57,7 +57,7 @@ debugLog('✓ Página carregou, JavaScript executando','ok');
 
 function initSupabase(){
   debugLog('initSupabase() chamada','info');
-  const configured = SUPABASE_URL && SUPABASE_URL !== 'https://lodvefqzlugdwubmwufy.supabase.co && SUPABASE_KEY && SUPABASE_KEY' !== 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxvZHZlZnF6bHVnZHd1Ym13dWZ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwNTUxMTEsImV4cCI6MjA5MjYzMTExMX0.E-na0bU1u_eBFbxz9sAYDEU9Xa1bZzct4dxVOwSUFYw';
+  const configured = SUPABASE_URL && SUPABASE_URL !== 'https://lodvefqzlugdwubmwufy.supabase.co' && SUPABASE_KEY && SUPABASE_KEY !== 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxvZHZlZnF6bHVnZHd1Ym13dWZ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwNTUxMTEsImV4cCI6MjA5MjYzMTExMX0.E-na0bU1u_eBFbxz9sAYDEU9Xa1bZzct4dxVOwSUFYw';
   debugLog('Configurado: '+configured+' | URL OK: '+(!!SUPABASE_URL && SUPABASE_URL.startsWith('https://'))+' | KEY OK: '+(!!SUPABASE_KEY && SUPABASE_KEY.startsWith('eyJ')),'info');
   if(!configured){
     debugLog('⚠ Mostrando aviso de configuração','warn');
